@@ -5,9 +5,14 @@ namespace RefactorMircoExcercise.TirePressureMonitoringSystem
         private const double LowPressureThreshold = 17;
         private const double HighPressureThreshold = 21;
 
-        readonly Sensor _sensor = new Sensor();
+        private readonly ISensor _sensor;
 
         bool _alarmOn = false;
+
+        public Alarm(ISensor sensor)
+        {
+            _sensor = sensor ?? throw new ArgumentNullException(nameof(sensor));
+        }
 
         public void Check()
         {
@@ -23,6 +28,5 @@ namespace RefactorMircoExcercise.TirePressureMonitoringSystem
         {
             get { return _alarmOn; }
         }
-
     }
 }
