@@ -10,9 +10,13 @@ namespace RefactorMircoExcercise.TelemetrySystem
         private readonly ITelemetryClient _telemetryClient;
         private string _diagnosticInfo = string.Empty;
 
+        public TelemetryDiagnosticControls():this(new TelemetryClient())
+        {
+           
+        }
         public TelemetryDiagnosticControls(ITelemetryClient telemetryClient)
         {
-            _telemetryClient = telemetryClient;
+            _telemetryClient = telemetryClient ?? throw new ArgumentNullException(nameof(telemetryClient));
         }
 
         public string DiagnosticInfo
