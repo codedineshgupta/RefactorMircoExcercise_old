@@ -10,7 +10,7 @@ namespace RefactorMircoExcercise.TelemetrySystem
         public void CheckTransmission_WhenTelemetryClientConnectSucceeds_ShouldSetDiagnosticInfo()
         {
             // Arrange
-            var mockTelemetryClient = new Mock<ITelemetryClient>();
+            var mockTelemetryClient = new Mock<ITelemetryClient>(); 
             mockTelemetryClient.Setup(x => x.OnlineStatus)                               
                                .Returns(true);
             mockTelemetryClient.Setup(x => x.Receive()).Returns("Mocked diagnostic message");
