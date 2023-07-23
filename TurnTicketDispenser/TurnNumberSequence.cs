@@ -1,4 +1,4 @@
-namespace TDDMicroExercises.TurnTicketDispenser
+namespace RefactorMircoExcercise.TurnTicketDispenser
 {
     public static class TurnNumberSequence
     {
