@@ -8,5 +8,6 @@
         void Disconnect();
         string Receive();
         void Send(string message);
-    }
+    }    
+
 }
