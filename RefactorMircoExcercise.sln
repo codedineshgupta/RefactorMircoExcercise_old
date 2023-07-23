@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C068F8DA-160E-4B93-AE1B-A58526CD6F28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TelemetrySystem", "TelemetrySystem", "{767210FB-3C55-4EFB-A489-14DB6FC8CE5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetrySystem", "TelemetrySystem\TelemetrySystem.csproj", "{2A376525-79D6-4430-B1FE-0C37B81A2A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetrySystem.Test", "TelemetrySystem.Test\TelemetrySystem.Test.csproj", "{CE250BE0-9ACB-4D48-B7E4-F3DB7FCE36A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A376525-79D6-4430-B1FE-0C37B81A2A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A376525-79D6-4430-B1FE-0C37B81A2A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A376525-79D6-4430-B1FE-0C37B81A2A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A376525-79D6-4430-B1FE-0C37B81A2A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE250BE0-9ACB-4D48-B7E4-F3DB7FCE36A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE250BE0-9ACB-4D48-B7E4-F3DB7FCE36A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE250BE0-9ACB-4D48-B7E4-F3DB7FCE36A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE250BE0-9ACB-4D48-B7E4-F3DB7FCE36A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{767210FB-3C55-4EFB-A489-14DB6FC8CE5C} = {C068F8DA-160E-4B93-AE1B-A58526CD6F28}
+		{2A376525-79D6-4430-B1FE-0C37B81A2A27} = {767210FB-3C55-4EFB-A489-14DB6FC8CE5C}
+		{CE250BE0-9ACB-4D48-B7E4-F3DB7FCE36A4} = {767210FB-3C55-4EFB-A489-14DB6FC8CE5C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D97675B2-26EA-4B02-98CA-519D5E29D3E1}
+	EndGlobalSection
+EndGlobal
