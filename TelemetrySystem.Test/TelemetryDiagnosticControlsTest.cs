@@ -63,7 +63,19 @@ namespace RefactorMircoExcercise.TelemetrySystem
             mockTelemetryClient.Verify(x => x.Disconnect(), Times.Once);
             mockTelemetryClient.Verify(x => x.Send(TelemetryClient.DiagnosticMessage), Times.Once);
         }
-       
+
+        [Fact]
+        public void TelemetryDiagnosticControls_Should_Throw_ArgumentNull_Exception_if_dependency_not_resolved()
+        {
+            // Arrange   
+            // Act
+            var exception = Assert.Throws<ArgumentNullException>(() => new TelemetryDiagnosticControls(null));
+
+            // Assert
+            Assert.IsType<ArgumentNullException>(exception);
+
+        }
+
     }
 
 }
