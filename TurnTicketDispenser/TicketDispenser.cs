@@ -4,6 +4,10 @@ namespace RefactorMircoExcercise.TurnTicketDispenser
     {
         private readonly ITurnNumberGenerator _turnNumberGenerator;
 
+        public TicketDispenser() :this(new TurnNumberGenerator())
+        {
+           
+        }
         public TicketDispenser(ITurnNumberGenerator turnNumberGenerator)
         {
             _turnNumberGenerator = turnNumberGenerator;
