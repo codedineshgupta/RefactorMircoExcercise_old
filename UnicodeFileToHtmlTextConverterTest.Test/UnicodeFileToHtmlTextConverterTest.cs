@@ -8,6 +8,7 @@ namespace RefactorMircoExcercise.UnicodeFileToHtmlTextConverter
         public void ConvertToHtml_ShouldConvertUnicodeFileToHtml()
         {
             // Arrange
+
             string sampleFileContent = "Line 1\nLine 2\nLine 3";
             string expectedHtml = "Line 1<br />Line 2<br />Line 3<br />";
             string fakeFilePath = "fake-file-path";
