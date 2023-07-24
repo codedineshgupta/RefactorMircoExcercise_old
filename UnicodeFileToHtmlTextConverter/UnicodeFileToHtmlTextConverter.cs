@@ -4,17 +4,21 @@ using System.Web;
 namespace RefactorMircoExcercise.UnicodeFileToHtmlTextConverter
 {
     public class UnicodeFileToHtmlTextConverter
-    {
-        private readonly string _fullFilenameWithPath;
+    {       
+        private readonly IFileReader _reader;
 
-        public UnicodeFileToHtmlTextConverter(string fullFilenameWithPath)
+        public UnicodeFileToHtmlTextConverter(string fullFilenameWithPath) :this(new UnicodeFileReader(fullFilenameWithPath))
         {
-            _fullFilenameWithPath = fullFilenameWithPath;
+           
+        }
+        public UnicodeFileToHtmlTextConverter(IFileReader reader)
+        {
+            _reader = reader;
         }
 
         public string ConvertToHtml()
         {
-            using (TextReader unicodeFileStream = File.OpenText(_fullFilenameWithPath))
+            using (TextReader unicodeFileStream = _reader.OpenText())
             {
                 string html = string.Empty;
 
